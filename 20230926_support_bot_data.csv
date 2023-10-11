@@ -1,0 +1,61 @@
+,input,response
+0,what is whylabs?,"WhyLabs is a platform that provides monitoring and observability for machine learning (ML) models in production. It helps ML teams gain insights into the behavior and performance of their models, enabling them to identify and address issues quickly. WhyLabs offers features such as data drift detection, model performance monitoring, and anomaly detection to help improve the reliability and trustworthiness of ML models."
+1,How do you use it?,"WhyLabs can be used for monitoring data used for model training, monitoring model predictions, rolling logger, online inferences, and decoupling whylogs. It provides tools and features to help users run AI with certainty. For more information on how to use WhyLabs, you can refer to the documentation or contact us for assistance."
+2,How much does WhyLabs cost?,"I'm sorry, but I don't have access to pricing information for WhyLabs. It would be best to contact WhyLabs directly for details on their pricing."
+3,What are some common use cases,"Some common use cases for WhyLabs include:
+
+1. Monitoring and observing model performance for predictive ML models, supporting delayed ground truth and custom performance metrics.
+2. Monitoring and observing data quality in ML model inputs, Feature Stores, batch and streaming pipelines.
+3. Detecting and root causing common ML issues such as drift, data quality, model performance degradation, and model bias.
+4. Explaining the cause of model performance degradation using tracing and feature importance.
+5. Detecting and root causing common LLM (Language and Learning Models) issues such as toxicity, PII leakage, malicious activity, and indications of hallucinations.
+
+These are just a few examples, and WhyLabs can be used in various other scenarios as well."
+4,describe the difference in monitoring llms and monitoring traditional ml models using whylabs,"Monitoring LLMs (Large Language Models) and traditional ML models using WhyLabs involves similar principles but with some key differences.
+
+1. Model Outputs: LLMs generate text-based outputs, while traditional ML models typically produce numerical or categorical predictions. Monitoring LLMs focuses on assessing text quality, relevance, sentiment, toxicity, and other language-specific metrics.
+
+2. Data Inputs: LLMs often require prompts or context to generate responses, making it important to monitor the quality and appropriateness of these inputs. Traditional ML models may not have this prompt-response dynamic and may rely on structured or unstructured data inputs.
+
+3. Metrics and Modules: WhyLabs provides specific modules and metrics tailored for LLM monitoring, such as text quality (readability, complexity), text relevance (similarity scores), security and privacy (jailbreak attempts, prompt injections), and sentiment/toxicity analysis. Traditional ML models may focus on metrics like accuracy, precision, recall, and feature importance.
+
+4. Use Cases: LLM monitoring is particularly relevant for applications involving natural language processing, chatbots, language translation, and content generation. Traditional ML models are commonly used for tasks like image recognition, fraud detection, recommendation systems, and time series forecasting.
+
+In summary, monitoring LLMs with WhyLabs involves assessing text quality, relevance, and security/privacy aspects specific to language models, while monitoring traditional ML models focuses on more general metrics and use cases."
+5,what is a reference profile,"A reference profile is a static profile that serves as a baseline for comparison in monitoring the performance of a model. It represents the expected behavior of the model and is used to detect any deviations or anomalies in the data. Users can upload multiple profiles for different slices of their dataset with various degrees of noise, and these profiles can be merged to create a reference profile. By comparing the current data with the reference profile, users can identify any changes or drift in the model's behavior."
+6,which drift metrics are supported,"WhyLabs uses Hellinger distance as the default metric for measuring drift. This metric is symmetric, handles missing values, and is easy to interpret. If you would like to use an alternative metric for drift measurement, you can submit a request to the WhyLabs support team."
+7,Does whylabs support data quality testing?,"Yes, WhyLabs supports data quality testing. It allows you to monitor your data pipelines and machine learning models in production to prevent data quality issues. By comparing newly generated profiles to historical baselines, WhyLabs can detect data drift, concept drift, and other data quality issues. This helps ensure the performance and reliability of your models."
+8,Tell me about analytics on embeddings,"With WhyLabs, you can perform the following analytics on embeddings:
+
+1. Profile embeddings data by comparing them to reference data points.
+2. Calculate reference embeddings manually or programmatically.
+3. Log embeddings data using whylogs.
+4. View and monitor embeddings data in WhyLabs, including visualizations and monitoring for distributional drift.
+
+Please note that the functionality for embeddings features is currently in beta, and changes to the whylogs functionality and platform capabilities can be expected."
+9,which distance metrics are available,"WhyLabs currently uses the Hellinger distance as the default metric for comparing embeddings data. However, if you would like to use an alternative metric, you can submit a request to the WhyLabs team."
+10,Does WhyLabs integrate with Sagemaker?,"Yes, WhyLabs integrates with Amazon Sagemaker. You can use WhyLabs to monitor data used for model training and to monitor model predictions in Sagemaker. You can also upload profiles to WhyLabs for analysis and comparison."
+11,In what way is spark used by whylabs?,"I'm sorry, but I don't have enough information to answer your question."
+12,How about Ray?,"Based on the provided context, there is no mention of WhyLabs using Ray. Therefore, it is unclear whether WhyLabs uses Ray or not."
+13,Give me an overview of the platform,"Certainly! The WhyLabs platform is a comprehensive monitoring and observability platform for machine learning (ML) models. It helps data scientists and ML engineers gain insights into the behavior and performance of their ML models in production. With WhyLabs, you can track and analyze key metrics, detect anomalies, and troubleshoot issues in real-time. The platform provides a user-friendly interface, powerful visualizations, and automated alerts to help you optimize and improve your ML models. It also offers features like data drift detection and model explainability. For more detailed information, you can refer to the WhyLabs Documentation, specifically the ""WhyLabs Overview"" and ""Onboarding to the Platform"" sections."
+14,where do i go if i have problems,"If you encounter any problems with WhyLabs, you can contact us at anytime for assistance. You can reach out to us through our website or by email. We are here to help you!"
+15,do you support rbac. tell me about it.,"Yes, we support Role-Based Access Control (RBAC) in our platform. RBAC allows you to grant different levels of access to different users within your organization. There are three roles available: 
+
+1. Admin: Admins have full access to the data, configuration, and settings for the organization. They can manage user membership and roles, onboard new projects, create API access tokens, and manage organization-level notification settings.
+
+2. Member: Members have day-to-day responsibility for monitoring projects. They can create and edit monitors, use all visualization capabilities, and view monitored data. However, they cannot create projects or API access tokens. To onboard a new project, a Member will need to work with an Admin.
+
+3. Viewer: Viewers can use all visualization capabilities of the platform but cannot set up monitors or change any settings for the organization.
+
+Please note that RBAC is available for Enterprise accounts only. If you would like to enable this feature, you can reach out to us via Slack or contact us directly."
+16,hwo do i go about building and using a custom metric,"To build and use a custom metric in WhyLabs, you can follow these steps:
+
+1. Identify the specific use case for your custom metric. It could be data-type specific metrics, model outputs, or model performance metrics.
+
+2. Reach out to the WhyLabs support team for assistance with your specific use case. They can provide guidance and help you configure the custom metric.
+
+3. If you're working with structured data, images, or text, WhyLabs already supports these data types out of the box. For other data types like audio or embeddings, WhyLabs is currently working with design partners to support them.
+
+4. Once you have identified your custom metric and received guidance from the support team, you can configure it in WhyLabs to start tracking and monitoring it.
+
+Please note that the exact process may vary depending on your specific use case and requirements. It's best to reach out to the WhyLabs support team for personalized assistance."

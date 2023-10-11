@@ -1,0 +1,30 @@
+,input,response
+0,what is whylabs?,"WhyLabs is a platform that provides monitoring and observability for machine learning (ML) models in production. It helps ML teams understand and explain the behavior of their models, detect and diagnose issues, and improve model performance. WhyLabs offers features such as data drift detection, model performance monitoring, and explainability tools to help ML practitioners gain insights into their models' behavior and make informed decisions."
+1,How do you use it?,"WhyLabs can be used to monitor data used for model training, monitor model predictions, perform rolling logging, and track online inferences. It also allows for decoupling whylogs from FastAPI and provides profiling in a prediction endpoint. For more information on how to use WhyLabs, you can refer to the documentation or contact us directly."
+2,which companies use whulabs,"I'm sorry, but I don't have access to information about specific companies that utilize WhyLabs. However, WhyLabs is a platform that can be used by any organization that wants to monitor and analyze their machine learning models and data."
+3,tell me what an LLM is,"LLM stands for Large Language Model. It refers to a type of artificial intelligence model that is trained on a large amount of text data and can generate human-like responses to prompts or questions. LLMs are used in various applications, such as chatbots, language translation, and content generation. They are designed to understand and generate natural language text."
+4,what kind of text goes into an LLM,"The specific type of text used to train a Language Model (LLM) can vary depending on the training data source and the intended application. LLMs are typically trained on large corpora of text data, which can include a wide range of sources such as books, articles, websites, and other textual content available on the internet. The training data is designed to be diverse and representative of the language patterns and structures found in natural language."
+5,what is a profile,"A profile is a statistical summary of a dataset that is generated using the whylogs open source library. It captures key statistical properties of the data, such as the distribution, number of missing values, and customizable metrics. Profiles are efficient, customizable, and mergeable, making them ideal for observability and monitoring use cases. They can be generated for various types of data and are uploaded to the WhyLabs Platform for monitoring and analysis."
+6,how do you monitor model health without groundtruth,"Monitoring model health without ground truth can be challenging, but there are several techniques that can be used:
+
+1. Monitoring input data: By monitoring the quality and distribution of the input data, you can identify potential issues that may affect the model's performance. This can include monitoring for data drift, missing values, outliers, or changes in data patterns.
+
+2. Monitoring output data: If you have access to some form of labeled data, you can compare the model's predictions with the ground truth labels to identify any discrepancies or errors. This can help you detect issues such as misclassifications or bias in the model's output.
+
+3. Monitoring performance metrics: Even without ground truth, you can still monitor the model's performance metrics, such as accuracy, precision, recall, or F1 score. By tracking these metrics over time, you can identify any significant changes or deviations that may indicate a problem with the model.
+
+4. Monitoring feedback loops: If your model is deployed in a real-world system where user feedback is available, you can leverage this feedback to monitor the model's performance. User feedback can provide valuable insights into the model's behavior and help identify any issues or areas for improvement.
+
+It's important to note that while these techniques can provide some level of monitoring without ground truth, having access to ground truth data is always preferable for more accurate and reliable model health monitoring."
+7,Does whylabs support model testing?,"Yes, WhyLabs supports model testing. It provides features for monitoring data used for model training, monitoring model predictions, and profiling in a prediction endpoint. Additionally, it offers tools for decoupling whylogs from FastAPI and provides integration examples for models and datasets in your organization."
+8,how do I load my embeddings,"To load your embeddings, you can follow these steps:
+
+1. Choose reference embeddings: You can either manually select or create reference embeddings, or use functions provided by WhyLabs to choose references programmatically.
+
+2. Log embeddings in whylogs: Use the provided code to log your embeddings using whylogs. Make sure to configure the EmbeddingMetric and set the appropriate schema.
+
+3. Upload to WhyLabs: Set the necessary environment variables and use the WhyLabsWriter to upload your profile to WhyLabs.
+
+Once you have completed these steps, you will be able to view and monitor your embeddings data in the WhyLabs platform."
+9,Does WhyLabs integrate with other technology or tools? which?,"WhyLabs integrates with various technologies and tools, including models and datasets specific to your organization, FastAPI models, and the whylogs library. If you have any specific integration questions or need more information, feel free to contact us."
+10,is the company name why labs or whylabs,"The company name is ""WhyLabs"" (without a space between ""Why"" and ""Labs"")."

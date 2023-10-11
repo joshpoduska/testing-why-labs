@@ -1,0 +1,63 @@
+,input,response
+0,what is whylabs?,"WhyLabs is a platform that provides monitoring and observability for machine learning (ML) models in production. It helps ML teams understand and explain the behavior of their models, detect and diagnose issues, and improve model performance. WhyLabs offers features such as data drift detection, model performance monitoring, and explainability tools to help ML practitioners gain insights into their models' behavior and make informed decisions."
+1,How do you use it?,"WhyLabs can be used to monitor data used for model training, monitor model predictions, perform rolling logging, and track online inferences. It also allows for decoupling whylogs from FastAPI and provides profiling in a prediction endpoint. For more information on how to use WhyLabs, you can refer to the documentation or contact us directly."
+2,What are some common use cases,"Some common use cases for WhyLabs include:
+
+1. Monitoring data used for model training: WhyLabs helps you track and analyze the data used to train your models, ensuring data quality and identifying potential issues.
+
+2. Monitoring model predictions: WhyLabs allows you to monitor and analyze the predictions made by your models in real-time, helping you identify anomalies and performance issues.
+
+3. Rolling logger: WhyLabs provides a rolling logger that captures and analyzes data over time, allowing you to track changes and trends in your models' behavior.
+
+4. Online inferences: WhyLabs decouples whylogs from your models, enabling you to capture and analyze data from online inferences separately.
+
+5. Integration examples: WhyLabs offers several example integrations specific to models and datasets in your organization, making it easier to integrate and use WhyLabs with your existing workflows.
+
+These are just a few examples, and there may be other use cases depending on your specific needs. If you have any specific questions or need further information, feel free to ask!"
+3,describe the difference in monitoring llms and monitoring traditional ml models using whylabs,"Monitoring LLMs (Large Language Models) and traditional ML models using WhyLabs involves similar principles but with some differences in the specific metrics and techniques used.
+
+When monitoring traditional ML models, WhyLabs helps teams monitor and observe model performance, data quality, and common ML issues such as drift, data quality, model performance degradation, and model bias. It also provides tracing and feature importance to explain model performance degradation.
+
+On the other hand, monitoring LLMs with WhyLabs involves additional considerations specific to language generation. For LLMs, WhyLabs helps monitor text quality metrics such as readability, complexity, and grade level to ensure the generated responses are clear, concise, and suitable for the intended audience. It also enables monitoring text relevance to assess the similarity between prompts and responses, ensuring the generated content aligns with the intended context. Additionally, WhyLabs supports monitoring security and privacy aspects, such as detecting jailbreak attempts, prompt injections, and refusals of service.
+
+In summary, while both traditional ML models and LLMs can be monitored using WhyLabs, monitoring LLMs involves additional metrics and techniques specific to language generation tasks."
+4,what is a reference profile,"A reference profile is a static profile that serves as a baseline for comparison in monitoring the performance of a model. It represents the expected behavior of the model and is used to detect any deviations or anomalies in the data. Users can upload multiple profiles for different slices of their dataset with various degrees of noise, and these profiles can be merged to create a reference profile. By comparing the current data with the reference profile, users can identify any changes or drift in the model's behavior."
+5,which drift metrics are supported,"WhyLabs uses Hellinger distance as the default metric for measuring drift. This metric is symmetric, handles missing values, and is easy to interpret. If you would like to use an alternative metric for drift measurement, you can submit a request to the WhyLabs support team."
+6,Does whylabs support data quality testing?,"Yes, WhyLabs supports data quality testing. It allows you to monitor your data pipelines and machine learning models in production to prevent data quality issues, such as spikes in null values or changes in cardinality, which can have a negative impact on your business."
+7,Tell me about analytics on embeddings,"With WhyLabs, you can perform various analytics on embeddings data. Some of the analytics that can be performed include:
+
+1. Profiling: You can profile embeddings data by comparing them to reference data points. This allows you to understand the distribution and characteristics of your embeddings.
+
+2. Distance Calculation: You can calculate distances between embeddings using different distance functions such as Euclidean distance or cosine similarity. This can help you measure the similarity or dissimilarity between embeddings.
+
+3. Cluster Analysis: You can perform cluster analysis on embeddings data to identify groups or clusters of similar embeddings. This can be useful for tasks such as anomaly detection or identifying subgroups within your data.
+
+4. Drift Detection: You can monitor embeddings data for distributional drift over time. This helps you identify changes in the embeddings space that may indicate issues or changes in your data.
+
+These are just a few examples of the analytics that can be performed on embeddings data using WhyLabs. The platform provides visualizations and monitoring capabilities to help you gain insights and track the health of your embeddings."
+8,which distance metrics are available,WhyLabs currently uses the Cosine similarity metric to measure the distance between embeddings.
+9,Does WhyLabs integrate with Sagemaker?,"Yes, WhyLabs integrates with Sagemaker. You can use WhyLabs to monitor data used for model training, monitor model predictions, and decouple whylogs from Sagemaker. If you have any further questions or need more information, feel free to ask!"
+10,In what way is spark used by whylabs?,"I'm sorry, but I don't have enough information to answer your question."
+11,How about Ray?,"Based on the provided context, there is no mention of WhyLabs using Ray. Therefore, it is unclear whether WhyLabs uses Ray or not."
+12,Give me an overview of the platform,"Certainly! The WhyLabs platform is a comprehensive monitoring and observability platform for machine learning (ML) models. It helps data scientists and ML engineers gain insights into the behavior and performance of their ML models in production. With WhyLabs, you can track and analyze key metrics, detect anomalies, and troubleshoot issues in real-time. The platform provides a user-friendly interface, powerful visualizations, and automated alerts to help you optimize and improve your ML models. For more detailed information, you can refer to the WhyLabs Documentation, specifically the ""WhyLabs Overview"" and ""Onboarding to the Platform"" sections."
+13,where do i go if i have problems,"If you have any questions or encounter any issues with WhyLabs, you can contact their support team at any time. They will be able to assist you and provide further guidance."
+14,do you support rbac. tell me about it.,"Yes, we support Role-Based Access Control (RBAC) in our platform. RBAC allows you to grant different levels of access to different users within your organization. There are three roles available: 
+
+1. Admin: Admins have full access to the data, configuration, and settings for the organization. They can manage user membership and roles, onboard new projects, create API access tokens, and manage organization-level notification settings.
+
+2. Member: Members have day-to-day responsibility for monitoring projects. They can create and edit monitors, use all visualization capabilities, and view monitored data. However, they cannot create projects or API access tokens. To onboard a new project, a Member will need to work with an Admin.
+
+3. Viewer: Viewers can use all visualization capabilities of the platform but cannot set up monitors or change any settings for the organization.
+
+Please note that RBAC is available for Enterprise accounts only. If you would like to enable this feature, you can reach out to us via Slack or contact us directly."
+15,hwo do i go about building and using a custom metric,"To build and use a custom metric in WhyLabs, you can follow these steps:
+
+1. Identify the specific use case for your custom metric. It could be data-type specific metrics, model outputs, or model performance metrics.
+
+2. Reach out to the WhyLabs support team for assistance with your specific use case. They can provide guidance and help you configure the custom metric.
+
+3. If you're working with structured data, images, or text, WhyLabs already supports these data types out of the box. For other data types like audio or embeddings, WhyLabs is currently working with design partners to support them.
+
+4. Once you have identified the metrics you want to track, you can configure them using the whylogs library. There are tutorials available to help you with this process.
+
+Remember, if you have any questions or need further assistance, you can always contact the WhyLabs support team. They are friendly and helpful and will be happy to assist you."

@@ -1,0 +1,20 @@
+,input,response
+0,what is whylabs?,"WhyLabs is a platform that provides monitoring and observability for machine learning (ML) models in production. It helps ML teams gain insights into the behavior and performance of their models, enabling them to identify and address issues quickly. WhyLabs offers features such as data drift detection, model performance monitoring, and anomaly detection to help improve the reliability and trustworthiness of ML models."
+1,How do you use it?,"WhyLabs can be used to monitor data used for model training, monitor model predictions, perform rolling logging, and track online inferences. It also allows for decoupling whylogs from FastAPI and provides profiling in a prediction endpoint. For more information on how to use WhyLabs, you can refer to the documentation or contact us directly."
+2,how do you spell whylabs?,"The correct spelling is ""WhyLabs"". Thank you for your kind words!"
+3,does whylabs work on image data and models?,"Yes, WhyLabs can work with image data and models. It provides monitoring and profiling capabilities for various types of data and models, including image data and models. If you have any specific questions or need assistance with integrating WhyLabs with your image data and models, feel free to contact us."
+4,does whylabs offer services to help me with observability?,"Yes, WhyLabs offers services to assist with observability. WhyLabs is a purpose-built ML Observability platform that helps ML teams continuously improve and control production ML models. The platform provides telemetry agents, which are open source libraries that collect privacy-preserving telemetry data, and a hosted platform that operates on the telemetry data to visualize model and data health, detect issues, and send alerts. WhyLabs also offers a rich user interface for configuring and analyzing observability data."
+5,how many peopl work for whylabs,I don't have access to the current number of employees at WhyLabs. It would be best to reach out to WhyLabs directly for the most accurate and up-to-date information.
+6,who is the ceo of whylabs?,"I'm sorry, but I don't have access to that information."
+7,how do I load my embeddings,"To load your embeddings, you can follow these steps:
+
+1. Choose reference embeddings: You can either manually select or create reference embeddings, or use functions provided by WhyLabs to choose references programmatically.
+
+2. Log embeddings in whylogs: Use the provided code snippet to log your embeddings using whylogs. Make sure to configure the EmbeddingMetric and set the appropriate schema.
+
+3. Upload to WhyLabs: Set the necessary environment variables and use the WhyLabsWriter to upload your profile to the WhyLabs platform.
+
+Once you have uploaded your embeddings, you can view and monitor them in the WhyLabs platform, which provides visualizations and monitoring capabilities for your embeddings data.
+
+Please note that the functionality for profiling embeddings data is currently in beta, so expect changes to the whylogs functionality and platform capabilities."
+8,Does WhyLabs integrate with other technology or tools? which?,"WhyLabs integrates with various technologies and tools, including models and datasets specific to your organization, FastAPI models, and the whylogs library. If you have any specific integration questions or need more information, feel free to contact us."
